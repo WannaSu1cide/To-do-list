@@ -119,11 +119,16 @@ ul >li {
     padding: 12px 16px 12px 16px;
     /* margin-left:100px; */
 }
-
+/* 
 .finish:hover {
-    background-color: green ;
-    color:black ;
-}
+
+} */
 .finishClick {
     text-decoration: line-through;
+}
+
+
+span:nth-child(2):hover{
+    background-color: green ;
+    color:black ;
 }
