@@ -121,8 +121,8 @@ ul >li {
 }
 
 .finish:hover {
-    background-color: green !important;
-    color:black i!important;
+    background-color: green ;
+    color:black ;
 }
 .finishClick {
     text-decoration: line-through;

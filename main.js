@@ -60,13 +60,7 @@ for (i=0;i<finish.length;i++) {
       
     }
 
-
-    // if (finish.style.background =="green"){
-    //     finish.onclick = function (){
-    //         let div = this.parentElement;
-    //         div.style.background = "#cbccc8";
-           
-    // }
+   
 }
 
 submit.onclick = function (){
