@@ -38,18 +38,45 @@ var i;
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     let div = this.parentElement;
-    div.style.display = "none";
+    let check = prompt("bạn có muốn xóa k? nếu có thì ấn có hoặc ghi không");
+    if(check = "có"){
+        div.style.display = "none";
+    }else {
+       
+    }
+    
   }
 }
 
 // finish when we click it 
+var flag = true;
 var finish = document.getElementsByClassName("finish");
+
 for (i=0;i<finish.length;i++) {
+    
     finish[i].onclick = function (event){
         let div = this.parentElement;
-        div.style.background = "green";
-        // event.stopPropgation();
+        div.classList.toggle("finishClick");
+      
     }
+
+
+    // if (finish.style.background =="green"){
+    //     finish.onclick = function (){
+    //         let div = this.parentElement;
+    //         div.style.background = "#cbccc8";
+           
+    // }
 }
+
+submit.onclick = function (){
+    var li = document.createElement("li");
+    var value = document. querySelector("#input").value;
+
+}
+
+
+
+
 
 
