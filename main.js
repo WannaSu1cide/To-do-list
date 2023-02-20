@@ -8,9 +8,8 @@ var check =true;
 
 
  submit.addEventListener("click", function full(e) {
-    
-   
     // render value
+    
          let li = document.createElement("li");
          let value = input.value;
         let inner = document.createTextNode(value);
@@ -28,16 +27,18 @@ var check =true;
          span.className = "close";
          span.appendChild(txt);
          myNodelist[i].appendChild(span);
+         
 }
 // add tick icon 
-    for (let i=0;i<myNodelist.length;i++){
+        for (let i =0; i < myNodelist.length;i++){    
          let finisedSpan = document.createElement("SPAN");
          let iconFinished = document.createTextNode("\u2713");
         finisedSpan.className="finish";
         finisedSpan.appendChild(iconFinished);
         myNodelist[i].appendChild(finisedSpan);
+         
+    }
 
-}
     // have a prompt if the user wanna remove a task
     for (var i = 0; i < close.length; i++) {
         close[i].onclick = function remove() {
@@ -56,7 +57,7 @@ var check =true;
   }
     //chuyển đổi tick 
     for (i=0;i<finish.length;i++) {
-        finish[i].onclick = function (event){
+        finish[i].onclick = function (){
            let div = this.parentElement;
          div.classList.toggle("finishClick");
       
@@ -77,6 +78,7 @@ document.onkeydown= function(event){
            ul.appendChild(li);
        }
        input.value = "";
+       
        // tao close btn
    for (let i = 0; i < myNodelist.length; i++) {
        var span = document.createElement("SPAN");
@@ -85,8 +87,8 @@ document.onkeydown= function(event){
         span.appendChild(txt);
         myNodelist[i].appendChild(span);
 }
-// add tick icon 
-   for (let i=0;i<myNodelist.length;i++){
+// add finish  icon 
+   for (let i= 0; i< myNodelist.length ; i++){
         let finisedSpan = document.createElement("SPAN");
         let iconFinished = document.createTextNode("\u2713");
        finisedSpan.className="finish";
@@ -103,7 +105,7 @@ document.onkeydown= function(event){
         if(check){
            return  div.style.display = "none"; 
         }else {
-          function doNothing(e){
+          function doNothing(){
             
           }
      }

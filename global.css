@@ -68,12 +68,12 @@ ul li {
   ul {
     margin-top:10px ;
   }
-ul > li:hover {
+ li:hover {
     background-color: black;
     color :white;
 }
 ul >li {
-   
+
     width: 500px;
     margin-right: 80px;
    
@@ -121,8 +121,7 @@ ul >li {
     text-decoration: line-through;
 }
 
-
-span:nth-child(2):hover{
-    background-color: green ;
-    color:black ;
+.finish:hover {
+    background-color:green ;
 }
+
