@@ -63,11 +63,8 @@ ul li {
 
 
   }
-  /* ul>li:check {
-    background-color: linear-gradient(#cbccc8,green);
-    color :white;
-    /* text-decoration: line-through; */
-  /* } */ */
+
+ 
   ul {
     margin-top:10px ;
   }
@@ -119,10 +116,7 @@ ul >li {
     padding: 12px 16px 12px 16px;
     /* margin-left:100px; */
 }
-/* 
-.finish:hover {
 
-} */
 .finishClick {
     text-decoration: line-through;
 }
